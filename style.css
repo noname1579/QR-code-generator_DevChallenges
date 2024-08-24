@@ -85,7 +85,7 @@ button:hover {
     border-radius: 14%;
 }
 
-@media  (max-width: 1500px) {
+@media  (0 < width < 1900px) {
 
     .qr-img {
         margin-top: 20%;
