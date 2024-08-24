@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-image: url(bg-illustration.svg);
+    background-repeat: no-repeat;
+    background-color: #111729;
+    background-position-x: 80%;
+    background-position-y: 30%;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+}
+
+.container-logo {
+    margin-top: 12%;
+}
+
+.container-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-input {
+    margin-top: 2%;
+    width: 35%;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 1rem;
+    background-color: #0c111f;
+    padding: 20px 15px;
+    color: #F2F5F9;
+    border: 3px solid #3662E3;
+}
+
+
+.container-input::placeholder {
+    opacity: 0.6;
+}
+
+.container-input:focus {
+    outline: none;
+}
+
+button {
+    position: absolute;
+    height: 55px;
+    width: 120px;
+    border-radius: 1rem;
+    font-size: 18px;
+    background-color: #56a5ff;
+    color: #F2F5F9;
+    margin-top: 38px;
+    margin-left: 28%;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    color: #615f5f;
+    transform: scale(0.95);    
+}
+
+.anim {
+    transition: 0.4s;
+}
+
+.qr-img {
+    margin-top: 6%;
+}
+
+.active {
+    padding: 12px;
+    border: 5px solid rgb(55, 55, 138);
+    border-radius: 14%;
+}
+
+@media  (max-width: 900px) {
+
+    .qr-img {
+        margin-top: 20%;
+        width: 150px;
+    }
+
+    .container-input {
+        width: 80%;
+    }
+
+    button {
+        display: block;
+        margin: 7% auto 0;
+        position: relative;
+    }
+
+    .container-btns {
+        display: block;
+    }
+}
